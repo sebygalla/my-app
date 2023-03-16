@@ -1,0 +1,12 @@
+.row{
+    display: flex;
+}
+
+.block{
+    display: flex;
+    
+}
+
+.block img{
+    width: 100px;
+}
