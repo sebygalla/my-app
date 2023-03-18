@@ -4,9 +4,7 @@ import React from "react";
 import {Navbar, Nav, Container} from 'react-bootstrap';
 import logo2 from './../asset/img/LogoCruz.png';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
-
-
+import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
 
 
 
@@ -24,7 +22,7 @@ function Barra() {
                     />
                 </Navbar.Brand>
                  {/* <Navbar.Brand href="#home">El Encuentro</Navbar.Brand> */}
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <NavbarToggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mx-auto">
                     <Nav.Link href="#features">Nosotros</Nav.Link>

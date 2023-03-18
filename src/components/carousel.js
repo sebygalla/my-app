@@ -19,7 +19,7 @@ function UncontrolledExample() {
         />
         <Carousel.Caption>
           <BasicExample/>
-          <p>El lugar de tu encuentro con Dios!</p>
+          {/* <p>El lugar de tu encuentro con Dios!</p> */}
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>

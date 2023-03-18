@@ -1,31 +1,82 @@
 import { Container } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import foto from '../asset/img/1.jpg';
 
-function GridExample() {
+
+
+import foto from '../asset/img/1.jpg';
+import foto3 from '../asset/img/3.jpg';
+import foto4 from '../asset/img/4.jpg';
+
+
+
+
+
+
+
+function GroupExample() {
   return (
-    <Container className='mt-5'>
-        <Row xs={1} md={2} className="g-4">
-        {Array.from({ length: 4 }).map((_, idx) => (
-            <Col>
-            <Card>
-                <Card.Img variant="top" src={foto} />
-                <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                </Card.Text>
-                </Card.Body>
-            </Card>
-            </Col>
-        ))}
-        </Row>
+    <Container className='d-flex flex-wrap align-items-center justify-content-between mt-5 m-auto text-center '>
+       
+
+        <Card style={{ width: '300px' }}>
+          <Card.Img variant="top" src={foto} />
+          <Card.Body>
+            <Card.Title>Card title</Card.Title>
+            <Card.Text>
+              This is a wider card with supporting text below as a natural lead-in
+              to additional content. This content is a little bit longer.
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">Last updated 3 mins ago</small>
+          </Card.Footer>
+        </Card>
+
+        <Card style={{ width: '300px' }}>
+          <Card.Img variant="top" src={foto4} />
+          <Card.Body>
+            <Card.Title>Card title</Card.Title>
+            <Card.Text>
+              This card has supporting text below as a natural lead-in to
+              additional content.{' '}
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">Last updated 3 mins ago</small>
+          </Card.Footer>
+        </Card>
+
+        <Card style={{ width: '300px' }}>
+          <Card.Img variant="top" src={foto3} />
+          <Card.Body>
+            <Card.Title>Card title</Card.Title>
+            <Card.Text>
+              This is a wider card with supporting text below as a natural lead-in
+              to additional content. This card has even longer content than the
+              first to show that equal height action.
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">Last updated 3 mins ago</small>
+          </Card.Footer>
+        </Card>
+        <Card style={{ width: '300px' }}>
+          <Card.Img variant="top" src={foto4} />
+          <Card.Body>
+            <Card.Title>Card title</Card.Title>
+            <Card.Text>
+              This is a wider card with supporting text below as a natural lead-in
+              to additional content. This card has even longer content than the
+              first to show that equal height action.
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">Last updated 3 mins ago</small>
+          </Card.Footer>
+        </Card>
+      
     </Container>
   );
 }
 
-export default GridExample;
+export default GroupExample;
